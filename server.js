@@ -3,7 +3,7 @@
 const express = require('express'); 
 const app = express(); 
  
-const handlebars = require('express-handlebars'); 
+const handlebars = require('express-handlebars').engine; 
 
 // .env for our security
 
@@ -14,7 +14,7 @@ require('dotenv').config();
 const port = process.env.PORT || 5000;
 
 
- 
+// access handlebars 
 
 app.set('view engine', 'handlebars');
 
