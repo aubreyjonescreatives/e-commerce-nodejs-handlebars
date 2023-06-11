@@ -11,10 +11,15 @@ require('dotenv').config();
 
 const port = process.env.PORT || 5000;
 
-//lets send a message to our port 
+
+// lets connect to our public folder thanks to express
+
+app.use(express.static('public'));
+
+//lets send our index.html file to our port 
 
 app.get('/', (req, res) => {
-    res.send('Hello Node World !'); 
+    res.send('index'); 
 });
 
 
