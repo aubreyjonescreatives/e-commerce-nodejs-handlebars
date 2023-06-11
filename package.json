@@ -19,6 +19,7 @@
   "dependencies": {
     "dotenv": "^16.1.4",
     "express": "^4.18.2",
+    "express-handlebars": "^7.0.7",
     "gitignore": "^0.7.0",
     "nodemon": "^2.0.22"
   }
