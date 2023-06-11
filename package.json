@@ -1,7 +1,7 @@
 {
   "name": "e-commerce-nodejs-handlebars",
   "version": "1.0.0",
-  "description": "nodejs backend ecommerce website using handlebarsjs",
+  "description": "nodejs backend ecommerce website using handlebars",
   "main": "server.js",
   "scripts": {
     "develop": "nodemon server.js",
@@ -12,7 +12,7 @@
     "backend",
     "ecommerce",
     "website",
-    "handlebarsjs"
+    "handlebars"
   ],
   "author": "Aubrey Jones",
   "license": "MIT",
