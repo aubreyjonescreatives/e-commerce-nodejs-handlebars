@@ -1,0 +1,1 @@
+## Welcome to a Node.js project using handlebars.js

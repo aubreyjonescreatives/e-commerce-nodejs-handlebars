@@ -1,0 +1,18 @@
+{
+  "name": "e-commerce-nodejs-handlebars",
+  "version": "1.0.0",
+  "description": "nodejs backend ecommerce website using handlebarsjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "nodejs",
+    "backend",
+    "ecommerce",
+    "website",
+    "handlebarsjs"
+  ],
+  "author": "Aubrey Jones",
+  "license": "MIT"
+}
