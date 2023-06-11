@@ -3,6 +3,7 @@
 const express = require('express'); 
 const app = express(); 
  
+// tutorial didn't have .engine as the last part of this code. It fixed handlebars error
 const handlebars = require('express-handlebars').engine; 
 
 // .env for our security
