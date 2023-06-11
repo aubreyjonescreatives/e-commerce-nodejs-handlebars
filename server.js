@@ -3,6 +3,8 @@
 const express = require('express'); 
 const app = express(); 
  
+const handlebars = require('express-handlebars'); 
+
 // .env for our security
 
 require('dotenv').config();
@@ -12,14 +14,27 @@ require('dotenv').config();
 const port = process.env.PORT || 5000;
 
 
+ 
+
+app.set('view engine', 'handlebars');
+
+app.engine('handlebars', handlebars({
+    layoutsDir: `${__dirname}/views/layouts`
+}));
+
+
+
 // lets connect to our public folder thanks to express
 
 app.use(express.static('public'));
 
-//lets send our index.html file to our port 
+
+
+//lets send our index.html file to our port
+
 
 app.get('/', (req, res) => {
-    res.send('index'); 
+    res.render('main', {layout: 'index'}); 
 });
 
 
