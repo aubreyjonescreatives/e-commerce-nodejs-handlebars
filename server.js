@@ -17,10 +17,11 @@ const port = process.env.PORT || 5000;
 
 // access handlebars 
 
-app.set('view engine', 'handlebars');
+app.set('view engine', 'hbs');
 
-app.engine('handlebars', handlebars({
-    layoutsDir: `${__dirname}/views/layouts`
+app.engine('hbs', handlebars({
+    layoutsDir: `${__dirname}/views/layouts`, 
+    extname: 'hbs'
 }));
 
 
