@@ -2,10 +2,11 @@
 
 
 {{> topNavigation }}
-
+{{#if listExists}}
 <ul>
 {{#each suggestedProducts }}
 <li>{{this.firstName}}</li>
 <li>{{this.lastName}}</li>
 {{/each}}
 </ul>
+{{/if}}

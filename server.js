@@ -42,13 +42,13 @@ const apiData = () => {
     ]
 }
 
-
+const list = true; 
 
 //lets send our index.html file to our port
 
 
 app.get('/', (req, res) => {
-    res.render('main', {layout: 'planB', suggestedProducts: apiData()}); 
+    res.render('main', {layout: 'planB', suggestedProducts: apiData(), listExists: list}); 
 });
 
 
