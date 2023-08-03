@@ -1,0 +1,7 @@
+.topNavigation {
+    display: inline-block;
+}
+
+.topNavigation li {
+    list-style-type: none; 
+}

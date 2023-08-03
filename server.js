@@ -1,5 +1,5 @@
 // added packages
-
+const mysql = require('mysql2'); 
 const express = require('express'); 
 const app = express();  
  
@@ -48,7 +48,7 @@ const list = true;
 
 
 app.get('/', (req, res) => {
-    res.render('main', {layout: 'planB', suggestedProducts: apiData(), listExists: list}); 
+    res.render('main', {layout: 'index', suggestedProducts: apiData(), listExists: list}); 
 });
 
 

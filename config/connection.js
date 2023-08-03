@@ -1,3 +1,8 @@
+import express from 'express';
+
+import mysql from 'mysql2'; 
+
+
 let sequelize; 
 
 require('dotenv').config();
