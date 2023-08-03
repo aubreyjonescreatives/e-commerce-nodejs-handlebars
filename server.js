@@ -1,7 +1,7 @@
 // added packages
 
 const express = require('express'); 
-const app = express(); 
+const app = express();  
  
 // tutorial didn't have .engine as the last part of this code. It fixed handlebars error
 const handlebars = require('express-handlebars').engine; 
@@ -33,12 +33,22 @@ app.engine('hbs', handlebars({
 app.use(express.static('public'));
 
 
+const apiData = () => {
+    return [
+        {
+            firstName: 'Ignicio', 
+            lastName: 'Montoya'
+        }
+    ]
+}
+
+
 
 //lets send our index.html file to our port
 
 
 app.get('/', (req, res) => {
-    res.render('main', {layout: 'planB'}); 
+    res.render('main', {layout: 'planB', suggestedProducts: apiData()}); 
 });
 
 
