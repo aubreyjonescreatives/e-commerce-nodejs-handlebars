@@ -22,6 +22,7 @@
     "express-handlebars": "^7.0.7",
     "gitignore": "^0.7.0",
     "hbs": "^4.2.0",
+    "mysql2": "^3.5.2",
     "nodemon": "^2.0.22"
   }
 }
