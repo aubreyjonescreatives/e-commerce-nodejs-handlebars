@@ -1,6 +1,11 @@
 <h1>connect index.handlebars to main.handlebars</h1>
 
 
-{{ topNavigation}}
+{{> topNavigation }}
 
-{{#each suggestedProducts}}
+<ul>
+{{#each suggestedProducts }}
+<li>{{this.firstName}}</li>
+<li>{{this.lastName}}</li>
+{{/each}}
+</ul>
